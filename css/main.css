@@ -1,0 +1,992 @@
+/*! HTML5 Boilerplate v7.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+    color: #000000;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+p {
+    font-family: 'PFAgoraSansPro-LightItalic';
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    margin: 0;
+}
+
+/*header section start*/
+header {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+/*header left section start*/
+.hd_left {
+    width: 60%;
+    float: left;
+
+}
+
+.hd_left_icon {
+    width: 10%;
+    float: left;
+
+}
+
+.hd_icon_1 {
+    font-size: 30px;
+    margin-top: 4px;
+    float: left;
+    color: #000000;
+}
+
+.hd_left_img {
+    width: 80%;
+    float: left;
+    margin-top: 7px;
+}
+
+.hd_left_img img {
+    width: 170px;
+}
+
+/*header left section end*/
+/*header right section start*/
+.hd_right {
+    width: 35%;
+    float: right;
+}
+
+.hd_p {
+    width: 80%;
+    float: left;
+}
+
+.hd_p_style {
+    float: right;
+    background: #ffd200;
+    padding: 9px 55px;
+    border-radius: 10px;
+}
+
+.hd_p_style p {
+    border-bottom: 2px dotted #000000;
+}
+
+/*header section right icon section*/
+.hd_right_icon {
+    width: 10%;
+    float: right;
+}
+
+.hd_icon_2 {
+    font-size: 30px;
+    margin-top: 6px;
+    float: right;
+    color: #000000;
+}
+
+/*header left section end*/
+/*header section end*/
+
+/*banner section start*/
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.banner_post {}
+
+.banner_post h1 {
+    font-family: 'PFAgoraSansPro-XThin';
+    font-size: 50px;
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+
+.banner_post h1::first-letter {
+    font-size: 150%;
+}
+
+.banner_post p {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.banner_post button {
+    font-family: 'PFAgoraSansPro-ThinItalic';
+    text-transform: uppercase;
+    font-size: 26px;
+    border: 1px solid #000000;
+    background: transparent;
+    border-radius: 5px;
+    padding: 20px 40px;
+    margin-bottom: 200px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.banner_post button:hover {
+    background: #ffd200;
+    color: #fff;
+    border: 1px solid #ffd200;
+}
+
+/*banner section end*/
+/*service section start*/
+.service {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.service_1,
+.service_2,
+.service_3,
+.service_4,
+.service_5,
+.service_6,
+.service_7 {
+    width: 14.28%;
+    float: left;
+}
+
+
+.service_2,
+.service_4,
+.service_6 {
+    border-top: 5px dashed #ffd200;
+    margin-top: 82px;
+}
+
+.service_same {}
+
+.service_same img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.service_same p {
+    font-weight: 700;
+}
+
+/*service section end*/
+/*advantage section start*/
+.advantage {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #f3f0e7;
+    overflow: hidden;
+}
+
+.advantage_hd {}
+
+.advantage_hd h1 {
+    font-family: 'PFAgoraSansPro-XThin';
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.advantage_hd h1::first-letter {
+    font-size: 150%;
+}
+
+.advantage_section {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.advantage_1,
+.advantage_2,
+.advantage_3 {
+    width: 33.33%;
+    float: left;
+}
+
+.advantage_same {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.advantage_same img {
+    width: 100%;
+}
+
+.advantage_same h4 {
+    font-family: 'PFAgoraSansPro-LightItalic';
+    font-size: 24px;
+
+}
+
+.advantage_same p {}
+
+.advantage_button {
+    overflow: hidden;
+}
+
+.advantage_button button {
+    text-transform: uppercase;
+    font-family: 'PFAgoraSansPro-ThinItalic';
+    font-size: 26px;
+    padding: 20px 40px;
+    color: #fff;
+    background: #e11a27;
+    border: 1px solid #e11a27;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all ease .6s;
+}
+
+.advantage_button button:hover {
+    background: #ffd200;
+    color: #e11a27;
+    border: 1px solid #ffd200;
+}
+
+/*advantage section end*/
+
+/*ready solutions section start*/
+.solutions {}
+
+.solutions_hading {
+    padding: 40px 0;
+}
+
+.solutions_hading h1 {
+    font-family: 'PFAgoraSansPro-XThin';
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+
+.solutions_hading h1::first-letter {
+    font-size: 150%;
+}
+
+.solutions_all {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.solutions_1,
+.solutions_2,
+.solutions_3 {
+        width: 28%;
+    float: left;
+    margin-right: 7.33%;
+
+}
+
+.solutions_3 {
+    margin-right: 0;
+}
+
+.solutions_2 {
+    margin-top: -42px;
+}
+
+.solutions_same {
+    width: 100%;
+    background-color: #ffd200;
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 420px;
+    margin: 0 auto;
+}
+
+
+.solution_letter,
+.solution_latter_2 {
+    text-align: center;
+    font-family: 'PFAgoraSansPro-Regular';
+}
+
+.solution_letter h2,
+.solution_latter_2 p {
+    display: inline-block;
+
+}
+
+.leater_larg::first-letter {
+    font-size: 150%;
+}
+.leater_larg_2::first-letter {
+    font-size: 120%;
+}
+.text_upparcase {
+    text-transform: uppercase;
+    margin-right: -4px;
+    font-weight: 400;
+}
+
+.solutions_same h4 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.solutions_same h4 span {}
+
+.book {
+    background: #fff;
+    padding: 20px 20px;
+    min-height: 180px;
+}
+
+.book_icon {
+    margin-right: 15px;
+    font-size: 20px;
+    color: #f7d202;
+}
+
+.book h4 {
+    font-size: 18px;
+    font-family: 'PFAgoraSansPro-Regular';
+    font-weight: 400;
+    text-transform: lowercase;
+    margin: 0;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.book_dolar {
+    background-color: #fff;
+}
+
+.book_dolar h2 {
+    font-family: 'PFAgoraSansPro-LightItalic';
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    margin: 0;
+}
+
+.bestseller {
+    background: #f7d202;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px 20px 0px 0px;
+    width: 200px;
+     margin-left: 23%;
+    text-transform: uppercase;
+}
+
+.bestseller h4 {
+    margin: 0;
+    color: red;
+    font-family: 'PFAgoraSansPro-BoldItalic';
+}
+
+.solution_latter_2 p {
+    font-family: 'PFAgoraSansPro-ThinItalic';
+    font-size: 22px !important;
+}
+
+/*ready solutions section end*/
+/*testimonials section start*/
+.testimonials_bg {
+    background-image: url(../img/bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 0;
+}
+
+.testimonials_post {
+    width: 50%;
+
+}
+
+.testimonials_h {}
+
+.testimonials_h h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'PFAgoraSansPro-XThin';
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+-webkit-.testimonials_h h1::first-letter {
+    font-size: 150%;
+}
+
+.testimonials_h h1::first-letter {
+    font-size: 150%;
+}
+
+.john_doe {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.john_img {
+    width: 30%;
+    float: left;
+}
+
+.john_img img {
+    width: 100%;
+}
+
+.john_name {
+    width: 65%;
+    float: left;
+    font-family: 'PFAgoraSansPro-LightItalic';
+    margin-top: 40px;
+    margin-left: 5%;
+
+}
+
+.john_name p {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: -5px;
+}
+
+.john_name h4 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.testimonials_article {
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.testimonials_article p {
+    margin-bottom: 15px;
+}
+
+.testimonials_article p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+.testimonials_article h4 {
+    font-family: 'PFAgoraSansPro-ThinItalic';
+    font-size: 16px;
+    text-align: right;
+    margin: 0;
+}
+
+.testimonials_article h4 a {
+    color: #000;
+    text-decoration: none;
+}
+
+.testimonials_article h4 a:hover {
+    text-decoration: underline;
+    text-decoration-color: #000000;
+}
+
+.article_icon {}
+
+.testimoials_button {
+    text-align: center;
+}
+
+.testimoials_button button {
+    font-family: 'PFAgoraSansPro-ThinItalic';
+    font-size: 26px;
+    text-transform: uppercase;
+    background: transparent;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px 40px;
+    cursor: pointer;
+    transition: all ease .4s;
+}
+
+.testimoials_button button:hover {
+    background-color: #ffd200;
+    border: 1px solid #ffd200;
+}
+
+/*testimonials section end*/
+/*terms section start*/
+.terms {
+    padding: 80px 0;
+}
+
+/*terms signel start*/
+.terms_all {
+    overflow: hidden;
+    padding: 20px 0;
+
+}
+
+.terms_signel {
+       width: 28%;
+    float: left;
+    margin-right: 8%;
+
+}
+.terms_signel:nth-child(3){
+    margin-right: 0;
+}
+.terms_same {
+    width: 100%;
+
+}
+
+.terms_header {
+    background-color: #ffd200;
+    padding: 8px 0;
+    border-radius: 10px 10px 2px 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.terms_header h2 {
+    font-family: 'PFAgoraSansPro-LightItalic';
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.terms_header h2::first-letter {
+    font-size: 150%;
+}
+
+.terms_footer {
+    font-family: 'PFAgoraSansPro-Regular';
+    background: #ddd;
+    min-height: 230px;
+    padding: 8% 12%;
+    border-radius: 2px 3px 10px 10px;
+}
+
+.terms_footer p {
+    
+}
+.terms_bold{
+    font-weight: 700;
+}
+.terms_footer ul {}
+
+.terms_footer ul li {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.terms_footer h4 {
+    font-family: 'PFAgoraSansPro-BoldItalic';
+    font-size: 18px;
+    color: red;
+}
+
+.terms_footer h4 p {
+    font-family: 'PFAgoraSansPro-BoldItalic';
+    font-size: 16px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: red;
+}
+
+/*terms signel end*/
+.terms_button {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.terms_button button:hover {
+    background-color: #f7d202;
+    border: 1px solid #f7d202;
+    color: red;
+}
+
+/*terms section end*/
+/*footer top section start*/
+.footer_top{
+    background-color: #f7d202;
+    overflow: hidden;
+    padding: 40px 0; 
+    font-family: 'PFAgoraSansPro-Regular';
+}
+.top_all{
+    overflow: hidden;
+    padding: 20px 0;
+}
+.top_section{
+    width: 20%;
+    float: left;
+    margin-right: 5%;
+}
+.top_section:last-child{
+    margin-right: 0;
+}
+.top_same{
+    width: 100%;
+}
+.top_same ul{
+    padding: 0;
+}
+.top_same ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+.top_same ul li a{
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    transition: all ease .4s;
+}
+.top_same ul li:hover a,.top_same ul li p:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+.top_same ul li  p{
+    display: inline-block;
+    font-family: 'PFAgoraSansPro-Regular';
+    text-transform: uppercase;
+}
+.top_right{
+    text-align: right;
+}
+.top_social{
+    margin-bottom: 40px;
+}
+.top_icon{
+    font-size: 28px;
+    color: #000000;
+    margin-right: 20px;
+    transition: all ease .4s;
+
+}
+.top_icon:hover{
+    color: #fff;
+}
+.top_icon_m{
+    margin-right: 0;
+}
+.top_same img{
+    width: 40%;
+}
+
+footer{
+    padding: 20px 0;
+}
+footer p{
+    font-family: 'PFAgoraSansPro-Regular';
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer p a{
+    color: #000;
+    text-decoration: none;
+    transition: all ease .4s;
+    
+}
+footer p a:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+/*footer top section end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    /* 1 */
+}
+
+/*
+* Extends the .sr-only class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
